@@ -3,7 +3,7 @@ from pygame import mixer
 import random
 import math
 
-# freecodecamp: https://www.youtube.com/watch?v=FfWpgLFMI7w
+# freecodecamp.org: https://www.youtube.com/watch?v=FfWpgLFMI7w
 
 # Initialize the pygame library
 pygame.init()
@@ -65,11 +65,11 @@ game_over_font = pygame.font.Font('freesansbold.ttf', 64)
 
 
 def show_score(x, y):
-    score = font.render("Score: " + str(score_value), True, (255,255,255))
+    score = font.render("Score: " + str(score_value), True, (255, 255, 255))
     screen.blit(score, (x, y))
 
 def game_over():
-    game_over_text = game_over_font.render("GAME OVER", True, (255,255,255))
+    game_over_text = game_over_font.render("GAME OVER", True, (255, 255, 255))
     screen.blit(game_over_text, (200, 250))
 
 def player(x, y):
@@ -83,8 +83,8 @@ def fire_bullet(x, y):
     bullet_state = "fire"
     screen.blit(bulletImg, (x + 16, y + 10))
 
-def isCollison(enemyX, enemyY, bulletX, bulletY):
-    distance = math.sqrt((math.pow(enemyX-bulletX,2)) + (math.pow(enemyY-bulletY,2)))
+def isCollision(enemyX, enemyY, bulletX, bulletY):
+    distance = math.sqrt((math.pow(enemyX-bulletX, 2)) + (math.pow(enemyY-bulletY, 2)))
     if distance < 27:
         return True
     else:
@@ -95,10 +95,10 @@ def isCollison(enemyX, enemyY, bulletX, bulletY):
 running = True
 while running:
     # RGB = Red, Green, Blue
-    screen.fill((0,0,0))
+    screen.fill((0, 0, 0))
 
     # Background
-    screen.blit(background,(0,0))
+    screen.blit(background, (0, 0))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -153,7 +153,7 @@ while running:
             enemyY[i] += enemyY_change[i]
 
         # Collision
-        collision = isCollison(enemyX[i], enemyY[i], bulletX, bulletY)
+        collision = isCollision(enemyX[i], enemyY[i], bulletX, bulletY)
         if collision:
             # Bullet sound
             explosion_sound = mixer.Sound('explosion.wav')
