@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f35c4de4-fc70-4090-8c84-ece0dbb92c79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Space Invaders.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ufo.png" afterDir="false" />
+    <list default="true" id="f35c4de4-fc70-4090-8c84-ece0dbb92c79" name="Changes" comment="initial: working game with collision detection">
+      <change afterPath="$PROJECT_DIR$/bullet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enemy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/galaxy_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +85,14 @@
       <option name="presentableId" value="Default" />
       <updated>1673838999679</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial: working game with collision detection">
+      <created>1673937614729</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673937614729</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,5 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial: working game with collision detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial: working game with collision detection" />
   </component>
 </project>
